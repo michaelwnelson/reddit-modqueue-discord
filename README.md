@@ -53,3 +53,5 @@ Next, navigate to **Settings** and click the **Reveal Config Vars** button in th
 `USER_AGENT` &mdash; create your own descriptive name. The `useragent` should be unique, descriptive, contain your username on Reddit, and the version number of your application. It's used by Reddit to identify your program. Here is reddit's documentation on it: www.github.com/reddit-archive/reddit/wiki/API#rules
 
 `WEBHOOK` &mdash; from Discord setup
+
+`SKIP_DISCORD` &mdash; optional flag, useful a first-time run to populate the database and not spam Discord

@@ -24,6 +24,11 @@ class Bot():
       print("One or more environment variables are not set. Please navigate to you Heroku app's Settings page and add your Config Vars.")
       sys.exit()
 
+    # optional flag to skip posting to Discord
+    # good option for a first-run to populate known reports into the database,
+    # and not spam Discord on first run with multiple reports
+    self.skip_discord = os.environ.get('SKIP_DISCORD', False)
+
     self.reddit = praw.Reddit(
       client_id = self.client_id,
       client_secret = self.client_secret,
@@ -185,7 +190,8 @@ class Bot():
         print("{} has already been reported".format(report))
       else:
         self.__save_report(report)
-        self.__send_to_discord(report)
+        if not self.skip_discord:
+          self.__send_to_discord(report)
         print("A {} by {} has been reported: <{}>".format(self.__get_report_type(report), report.author, self.__get_report_url(report)))
 
 
