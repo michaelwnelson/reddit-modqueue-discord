@@ -184,6 +184,7 @@ class Bot():
 
 
   def run(self):
+    print("Starting stream for all reports...")
     for report in praw.models.util.stream_generator(self.__get_report_generator):
       print("Checking report {}...".format(report))
       if (self.__report_exists(report)):
