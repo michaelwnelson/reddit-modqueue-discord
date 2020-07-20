@@ -55,3 +55,13 @@ Next, navigate to **Settings** and click the **Reveal Config Vars** button in th
 `WEBHOOK` &mdash; from Discord setup
 
 `SKIP_DISCORD` &mdash; optional flag, useful a first-time run to populate the database and not spam Discord
+
+### Launch your worker
+
+Finally, we're ready to launch the worker! Navigate to the **Overview** tab on your Heroku dashboard and under **Dyno formation** click the **Configure Dynos** link. On this page, click the **Edit** button (pencil) and toggle it to on.
+
+## Free Heroku Hours
+
+As long as you add a credit card to your account (which won't be charged), you'll be able to run your hobby dyno for free indefinitely. According to the [Free dyno hour pool](https://devcenter.heroku.com/articles/free-dyno-hours#free-dyno-hour-pool):
+
+> Personal accounts are given a base of 550 free dyno hours each month. In addition to these base hours, accounts which verify with a credit card will receive an additional 450 hours added to the monthly free dyno quota. **This means you can receive a total of 1000 free dyno hours per month, if you verify your account with a credit card.**
