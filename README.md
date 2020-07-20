@@ -20,11 +20,11 @@ Navigate to www.reddit.com/prefs/apps/ and click the button to create an app.
 * Select script (Script for personal use. Will only have access to the developers accounts)
 * Give it a description
 * The about URL is traditionally a link to the repository
-* Set the **redirect uri** to www.not-an-aardvark.github.io/reddit-oauth-helper/
+* Set the **redirect uri** to https://not-an-aardvark.github.io/reddit-oauth-helper/
 
 Store the `client_id` (the string below **personal use script**) and the secret into the `client_id` and `client_secret` for our setup with Heroku in a minute.
 
-* Navigate to www.not-an-aardvark.github.io/reddit-oauth-helper/
+* Navigate to https://not-an-aardvark.github.io/reddit-oauth-helper/
 * Paste your Client ID and Client Secret
 * Check the **Permanent** box
 * Check all options
