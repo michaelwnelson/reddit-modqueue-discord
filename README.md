@@ -65,3 +65,7 @@ Finally, we're ready to launch the worker! Navigate to the **Overview** tab on y
 As long as you add a credit card to your account (which won't be charged), you'll be able to run your hobby dyno for free indefinitely. According to the [Free dyno hour pool](https://devcenter.heroku.com/articles/free-dyno-hours#free-dyno-hour-pool):
 
 > Personal accounts are given a base of 550 free dyno hours each month. In addition to these base hours, accounts which verify with a credit card will receive an additional 450 hours added to the monthly free dyno quota. **This means you can receive a total of 1000 free dyno hours per month, if you verify your account with a credit card.**
+
+## Support Me
+
+You can support me by [buying me a beer 🍺](https://www.buymeacoffee.com/michaelwnelson)!
